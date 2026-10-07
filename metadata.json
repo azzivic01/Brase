@@ -1,0 +1,6 @@
+{
+  "name": "BRASA — The Ritual of Fire",
+  "description": "Experiência digital gastronômica e cinematográfica para o restaurante autoral contemporâneo BRASA. Cozinha de fogo, ingredientes sazonais e atmosfera visceral.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

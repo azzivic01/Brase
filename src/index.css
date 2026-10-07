@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-obsidian: #050505;
+    --color-charcoal: #0E0D0D;
+    --color-burnt-umber: #1B1513;
+    --color-clay: #7A4B3D;
+    --color-bone: #E8E4DF;
+    --color-ash: #736F6A;
+    --color-ember: #E84626;
+    --color-ember-glow: #F26430;
+  }
+
+  body {
+    background-color: #070707;
+    color: #E8E4DF;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-display {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+::-webkit-scrollbar-thumb {
+  background: #252321;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E84626;
+}
+
+/* Film grain effect */
+.bg-film-grain {
+  background-image: radial-gradient(rgba(232, 70, 38, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Atmospheric glow pulse */
+@keyframes emberPulse {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(1.05);
+  }
+}
+
+.animate-ember-pulse {
+  animation: emberPulse 6s ease-in-out infinite;
+}
+
+/* Text balance */
+.text-balance {
+  text-wrap: balance;
+}
